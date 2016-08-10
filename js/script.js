@@ -15,6 +15,9 @@ var divide = function(number1, number2) {
   return number1 / number2;
 };
 
+var exponent = function(number1, number2) {
+  return number1 ** number2 ;
+};
 // front end logic
 
 $(document).ready(function() {
@@ -32,6 +35,9 @@ $(document).ready(function() {
     }
     else if(arithmetic === "times"){
       $(".output").text(multiply(n1,n2));
+    }
+    else if(arithmetic === "exponent"){
+      $(".output").text(exponent(n1,n2));
     }
     else {
       $(".output").text(divide(n1,n2));
